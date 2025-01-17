@@ -19,12 +19,12 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 
-app.listen(3000, () => {
-  console.log("Listening on server 3000 !!");
+app.listen(8080, () => {
+  console.log("Listening on server 8080 !!");
 });
 
-app.use("/api/user", userRoutes);
-app.use("/api/auth", authRoutes);
+app.use("/user", userRoutes);
+app.use("/auth", authRoutes);
 app.use("/tasks", tasks);
 
 // middleware

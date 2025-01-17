@@ -28,7 +28,7 @@ export const signin = async (req, res, next) => {
     res
       .cookie("access_token", token, { httpOnly: true, expires: expiryDate })
       .status(200)
-      .json(rest);
+      .json({ message: "user sign in successfully", user: rest });
   } catch (error) {
     next(error);
   }

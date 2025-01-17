@@ -2,12 +2,6 @@ import User from '../models/user.models.js';
 import { errorHandler } from '../utils/error.js';
 import bcryptjs from 'bcryptjs';
 
-export const test = (req, res) => {
-  res.json({
-    message: 'API is working!',
-  });
-};
-
 // update user
 
 export const updateUser = async (req, res, next) => {

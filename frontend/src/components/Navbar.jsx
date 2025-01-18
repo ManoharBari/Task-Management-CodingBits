@@ -1,28 +1,10 @@
 import { LogOut, NotebookPen } from 'lucide-react';
 import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router'
-// import { useNavigate } from 'react-router-dom'
-// import { useAlert } from '../context/alerts/alertContext'
-// import UserContext from '../context/user/userContext';
 import '../styles/navbar.css';
 
 function Navbar() {
-    //     const alert = useAlert()
-    //     const navigate = useNavigate()
-    //     const { getUser, user } = useContext(UserContext)
-
-    //     const Logout = () => {
-    //         alert.success("Logout Sucessfully")
-    //         localStorage.removeItem("token")
-    //         navigate("/login")
-    //     }
-
-    //     useEffect(() => {
-    //         if (localStorage.getItem("token")) {
-    //             getUser()
-    //         }
-    //     }, [getUser])
-
+ 
     return (
         <>
             <nav className="navbar navbar-expand-lg">
@@ -35,7 +17,6 @@ function Navbar() {
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         </ul>
 
-                        {/* {!localStorage.getItem("token") ? */}
                         <div>
                             <Link to="/login" className='btn btn-primary mx-2' type='button'>Login</Link>
                             <Link to="/signup" className='btn btn-outline-primary' type='button'>Signup</Link>

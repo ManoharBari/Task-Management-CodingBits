@@ -64,3 +64,72 @@
   border-radius: 8px;
   color: black;
 }
+
+.editbtn {
+  padding: 7px 10px;
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  background-color: #1275ff;
+  color: white;
+}
+
+.delbtn {
+  padding: 7px 10px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  background-color: #e71e43;
+  color: white;
+}
+
+.noteItem {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid rgba(35, 35, 35, 0.162);
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: white;
+}
+
+.noteItem:hover {
+  background-color: #e0e0e031;
+}
+
+.noteContent {
+  flex: 1;
+  margin-bottom: 0.5rem;
+}
+
+.noteTitle {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.notePreview {
+  margin: 0;
+  color: #666666;
+  font-size: 0.875rem;
+}
+
+.noteMeta {
+  margin-top: 0.5rem;
+}
+
+.tag {
+  padding: 0.25rem 0.9rem;
+  border-radius: 20px;
+  background-color: #e0e0e080;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.timestamp {
+  color: #666666;
+  font-size: 0.7rem;
+}

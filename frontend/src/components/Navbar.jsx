@@ -7,21 +7,21 @@ import { Link } from 'react-router'
 import '../styles/navbar.css';
 
 function Navbar() {
-    const alert = useAlert()
-    const navigate = useNavigate()
-    const { getUser, user } = useContext(UserContext)
+    //     const alert = useAlert()
+    //     const navigate = useNavigate()
+    //     const { getUser, user } = useContext(UserContext)
 
-    const Logout = () => {
-        alert.success("Logout Sucessfully")
-        localStorage.removeItem("token")
-        navigate("/login")
-    }
+    //     const Logout = () => {
+    //         alert.success("Logout Sucessfully")
+    //         localStorage.removeItem("token")
+    //         navigate("/login")
+    //     }
 
-    useEffect(() => {
-        if (localStorage.getItem("token")) {
-            getUser()
-        }
-    }, [getUser])
+    //     useEffect(() => {
+    //         if (localStorage.getItem("token")) {
+    //             getUser()
+    //         }
+    //     }, [getUser])
 
     return (
         <>
@@ -33,18 +33,16 @@ function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
                         </ul>
 
-
-                        <div>Hi, {user.username}</div>
-
-                        {!localStorage.getItem("token") ?
-                            <div>
-                                <Link to="/login" className='loginbtn mx-2' type='button'>Login</Link>
-                                <Link to="/signup" className='signupbtn' type='button'>Signup</Link>
-                            </div> : <button onClick={Logout} className='btn'>
-                                <div className="icon"><LogOut size={16} /></div></button>}
+                        {/* {!localStorage.getItem("token") ? */}
+                        <div>
+                            <Link to="/login" className='btn btn-primary mx-2' type='button'>Login</Link>
+                            <Link to="/signup" className='btn btn-outline-primary' type='button'>Signup</Link>
+                        </div>
+                        <button className='btn'>
+                            <div className="icon"><LogOut size={16} /></div>
+                        </button>
                     </div>
                 </div>
             </nav >

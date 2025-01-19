@@ -13,6 +13,9 @@ function Noteitem() {
         <div className="container">
             <div className="noteItem">
                 <div className="noteContent">
+                    <div className="tags">
+                        <span className="tag">{note.tag}</span>
+                    </div>
                     <div className="note-title">
                         <h3 className="noteTitle">{note.title}</h3>
                         <div className="action">
@@ -22,13 +25,69 @@ function Noteitem() {
                     </div>
                     <p className="notePreview">{note.description}</p>
                     <div className="noteMeta">
-                        <div className="tags">
-                            <span className="tag">{note.tag}</span>
-                        </div>
+
                         <time className="timestamp">{`Created At ${note.date}`}</time>
                     </div>
                 </div>
             </div>
+            <div className="noteItem">
+                <div className="noteContent">
+                    <div className="tags">
+                        <span className="tag">{note.tag}</span>
+                    </div>
+                    <div className="note-title">
+                        <h3 className="noteTitle">{note.title}</h3>
+                        <div className="action">
+                            <span className='editbtn'> <Pencil size={16} /> </span>
+                            <span className='delbtn'> <Trash2 size={16} /> </span>
+                        </div>
+                    </div>
+                    <p className="notePreview">{note.description}</p>
+                    <div className="noteMeta">
+
+                        <time className="timestamp">{`Created At ${note.date}`}</time>
+                    </div>
+                </div>
+            </div>
+            <div className="noteItem">
+                <div className="noteContent">
+                    <div className="tags">
+                        <span className="tag">{note.tag}</span>
+                    </div>
+                    <div className="note-title">
+                        <h3 className="noteTitle">{note.title}</h3>
+                        <div className="action">
+                            <span className='editbtn'> <Pencil size={16} /> </span>
+                            <span className='delbtn'> <Trash2 size={16} /> </span>
+                        </div>
+                    </div>
+                    <p className="notePreview">{note.description}</p>
+                    <div className="noteMeta">
+
+                        <time className="timestamp">{`Created At ${note.date}`}</time>
+                    </div>
+                </div>
+            </div>
+            <div className="noteItem">
+                <div className="noteContent">
+                    <div className="tags">
+                        <span className="tag">{note.tag}</span>
+                    </div>
+                    <div className="note-title">
+                        <h3 className="noteTitle">{note.title}</h3>
+                        <div className="action">
+                            <span className='editbtn'> <Pencil size={16} /> </span>
+                            <span className='delbtn'> <Trash2 size={16} /> </span>
+                        </div>
+                    </div>
+                    <p className="notePreview">{note.description}</p>
+                    <div className="noteMeta">
+
+                        <time className="timestamp">{`Created At ${note.date}`}</time>
+                    </div>
+                </div>
+            </div>
+        
         </div>
     )
 }

@@ -6,10 +6,10 @@ function Notes() {
     return (
         <>
             <div>
-                <button type="button" className="btn my-2 position-absolute top-1 end-0 mx-3  btn-primary" data-bs-toggle="modal" data-bs-target="#editModal">+ Add
+                <button type="button" className="btn addbtn position-absolute top-1 end-0 btn-primary" data-bs-toggle="modal" data-bs-target="#editModal">+ Add
                 </button>
 
-                <h3 className='my-2 mx-4'>Hello Manohar</h3>
+                <h4 className='my-3 mx-4'>Hello Manohar</h4>
 
                 <div className="modal fade" id="editModal" tabIndex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
